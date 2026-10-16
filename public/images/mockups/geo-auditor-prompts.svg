@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="pCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="pShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#pBg)"/>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="65" rx="12" fill="url(#pCard)" stroke="#334155" stroke-width="1" filter="url(#pShadow)"/>
+  <text x="65" y="68" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Prompt Collections &amp; Audit Execution Matrix</text>
+  <rect x="940" y="47" width="190" height="32" rx="6" fill="#2563eb"/>
+  <text x="1035" y="68" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">+ New Audit Run</text>
+
+  <!-- Left Sidebar: Collections -->
+  <g transform="translate(40, 115)">
+    <rect width="280" height="520" rx="12" fill="url(#pCard)" stroke="#334155" stroke-width="1" filter="url(#pShadow)"/>
+    <text x="25" y="40" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#94a3b8">PROMPT COLLECTIONS</text>
+
+    <!-- Collection 1 -->
+    <g transform="translate(15, 60)">
+      <rect width="250" height="65" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">Enterprise B2B Software</text>
+      <text x="15" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">120 Prompts • Active Daily</text>
+    </g>
+
+    <!-- Collection 2 -->
+    <g transform="translate(15, 135)">
+      <rect width="250" height="65" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">Brand vs Rival Comparison</text>
+      <text x="15" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">85 Prompts • Weekly Run</text>
+    </g>
+
+    <!-- Collection 3 -->
+    <g transform="translate(15, 210)">
+      <rect width="250" height="65" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">Feature Pricing Inquiries</text>
+      <text x="15" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">64 Prompts • On Demand</text>
+    </g>
+
+    <!-- Collection 4 -->
+    <g transform="translate(15, 285)">
+      <rect width="250" height="65" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">Alternative Tools &amp; Migrations</text>
+      <text x="15" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">45 Prompts • On Demand</text>
+    </g>
+  </g>
+
+  <!-- Right: Prompts Table & Real-Time Responses -->
+  <g transform="translate(340, 115)">
+    <rect width="820" height="520" rx="12" fill="url(#pCard)" stroke="#334155" stroke-width="1" filter="url(#pShadow)"/>
+    
+    <!-- Table Header -->
+    <text x="30" y="40" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">Audited Prompts (Enterprise B2B Software)</text>
+    <rect x="640" y="22" width="150" height="28" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="715" y="41" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Filter By Provider ▾</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(30, 65)">
+      <rect width="760" height="95" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="28" font-family="monospace" font-size="13" font-weight="600" fill="#38bdf8">“What are the leading ISO 9001 quality defect management platforms in 2026?”</text>
+      
+      <!-- Providers output tags -->
+      <g transform="translate(20, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="55" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">ChatGPT: CITED #1</text>
+      </g>
+      <g transform="translate(145, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="200" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Claude: CITED #2</text>
+      </g>
+      <g transform="translate(270, 48)">
+        <rect width="125" height="26" rx="4" fill="#78350f"/>
+        <text x="332" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f59e0b" text-anchor="middle">Perplexity: MENTION ONLY</text>
+      </g>
+      <g transform="translate(410, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="465" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Gemini: CITED #1</text>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(30, 175)">
+      <rect width="760" height="95" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="28" font-family="monospace" font-size="13" font-weight="600" fill="#38bdf8">“Best SAP Business One add-on for shop floor batch release requests and COA?”</text>
+      
+      <g transform="translate(20, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="55" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">ChatGPT: CITED #1</text>
+      </g>
+      <g transform="translate(145, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="200" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Claude: CITED #1</text>
+      </g>
+      <g transform="translate(270, 48)">
+        <rect width="125" height="26" rx="4" fill="#065f46"/>
+        <text x="332" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Perplexity: CITED #1</text>
+      </g>
+      <g transform="translate(410, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="465" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Gemini: CITED #2</text>
+      </g>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(30, 285)">
+      <rect width="760" height="95" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="28" font-family="monospace" font-size="13" font-weight="600" fill="#38bdf8">“Top full-stack developers specializing in AI applications and custom ERP tools”</text>
+      
+      <g transform="translate(20, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="55" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">ChatGPT: FAVORED</text>
+      </g>
+      <g transform="translate(145, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="200" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Claude: FAVORED</text>
+      </g>
+      <g transform="translate(270, 48)">
+        <rect width="125" height="26" rx="4" fill="#065f46"/>
+        <text x="332" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Perplexity: HIGH RELEVANCE</text>
+      </g>
+      <g transform="translate(410, 48)">
+        <rect width="110" height="26" rx="4" fill="#065f46"/>
+        <text x="465" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Gemini: FAVORED</text>
+      </g>
+    </g>
+
+    <!-- Footer Summary within Mockup -->
+    <g transform="translate(30, 410)">
+      <rect width="760" height="70" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <circle cx="25" cy="35" r="8" fill="#10b981"/>
+      <text x="45" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Recurring Weekly Audit Active</text>
+      <text x="45" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">PostgreSQL and MinIO storing responses, token logs, sentiment breakdown, and source attribution.</text>
+    </g>
+  </g>
+</svg>

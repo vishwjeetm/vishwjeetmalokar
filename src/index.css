@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 15, 25, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ==========================================================================
+   THEME SPECIFIC GLOBAL OVERRIDES & EFFECTS (DARK & LIGHT)
+   ========================================================================== */
+
+/* 1. GLASSMORPHISM */
+[data-theme="glassmorphism"] {
+  --theme-bg: #0b0f19;
+}
+[data-theme="glassmorphism"] body {
+  background-color: #0b0f19;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.12) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(14, 165, 233, 0.05) 0px, transparent 60%);
+}
+
+/* 2. CLAYMORPHISM */
+[data-theme="claymorphism"] {
+  --theme-bg: #0f1420;
+}
+[data-theme="claymorphism"] body {
+  background-color: #0f1420;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.08) 0%, transparent 40%);
+}
+[data-theme="claymorphism"] button,
+[data-theme="claymorphism"] .card {
+  letter-spacing: -0.01em;
+}
+
+/* 3. SKEUOMORPHISM */
+[data-theme="skeuomorphism"] {
+  --theme-bg: #0a0d14;
+}
+[data-theme="skeuomorphism"] body {
+  background-color: #0a0d14;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* 4. NEUMORPHISM */
+[data-theme="neumorphism"] {
+  --theme-bg: #121620;
+}
+[data-theme="neumorphism"] body {
+  background-color: #121620;
+}
+
+/* ==========================================================================
+   DEDICATED LIGHT MODE STYLES & OVERRIDES
+   ========================================================================== */
+[data-mode="light"] {
+  color-scheme: light;
+}
+
+[data-mode="light"] ::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.8);
+}
+[data-mode="light"] ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+[data-mode="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Typography inversions for light mode */
+[data-mode="light"] .text-white {
+  color: #0f172a !important;
+}
+[data-mode="light"] .text-slate-100 {
+  color: #0f172a !important;
+}
+[data-mode="light"] .text-slate-200 {
+  color: #1e293b !important;
+}
+[data-mode="light"] .text-slate-300 {
+  color: #334155 !important;
+}
+[data-mode="light"] .text-slate-400 {
+  color: #64748b !important;
+}
+[data-mode="light"] .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Background overrides for container sections */
+[data-mode="light"] .bg-\[\#0b0f19\] {
+  background-color: #f8fafc !important;
+}
+[data-mode="light"] .bg-\[\#070a12\] {
+  background-color: #f1f5f9 !important;
+}
+[data-mode="light"] .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+[data-mode="light"] .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+[data-mode="light"] .border-slate-800 {
+  border-color: #e2e8f0 !important;
+}
+[data-mode="light"] .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+[data-mode="light"] .border-white\/15 {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Light Theme Backgrounds */
+[data-mode="light"][data-theme="glassmorphism"] {
+  --theme-bg: #f8fafc;
+}
+[data-mode="light"][data-theme="glassmorphism"] body {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(14, 165, 233, 0.04) 0px, transparent 60%);
+}
+
+[data-mode="light"][data-theme="claymorphism"] {
+  --theme-bg: #f0f4f9;
+}
+[data-mode="light"][data-theme="claymorphism"] body {
+  background-color: #f0f4f9;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(59, 130, 246, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.06) 0%, transparent 40%);
+}
+
+[data-mode="light"][data-theme="skeuomorphism"] {
+  --theme-bg: #eef2f6;
+}
+[data-mode="light"][data-theme="skeuomorphism"] body {
+  background-color: #eef2f6;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+[data-mode="light"][data-theme="neumorphism"] {
+  --theme-bg: #e6ecf5;
+}
+[data-mode="light"][data-theme="neumorphism"] body {
+  background-color: #e6ecf5;
+}

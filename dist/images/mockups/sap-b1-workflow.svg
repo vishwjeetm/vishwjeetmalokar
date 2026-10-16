@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="sapShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="550" fill="url(#sapBg)"/>
+
+  <!-- Title -->
+  <text x="50" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#f8fafc">SAP Business One SDK Add-on Architecture</text>
+  <text x="50" y="80" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">VB.NET event pipeline, UI API / DI API bridge, User-Defined Objects (UDO), and QA compliance</text>
+
+  <!-- Flow Steps -->
+  <!-- Step 1: SAP B1 Client & UI API -->
+  <g transform="translate(50, 120)">
+    <rect width="260" height="180" rx="12" fill="url(#stepGrad)" stroke="#3b82f6" stroke-width="1.5" filter="url(#sapShadow)"/>
+    <circle cx="35" cy="35" r="16" fill="#1e3a8a"/>
+    <text x="35" y="41" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#60a5fa" text-anchor="middle">1</text>
+    <text x="65" y="40" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">SAP UI API &amp; Forms</text>
+    
+    <text x="25" y="85" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• Menu item click interception</text>
+    <text x="25" y="110" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• Custom XML form rendering</text>
+    <text x="25" y="135" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• Matrix grid line item validation</text>
+    <text x="25" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#93c5fd">• Quality Test Request (QTR)</text>
+  </g>
+
+  <!-- Connector Arrow 1 -->
+  <g transform="translate(325, 200)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#3b82f6" stroke-width="3" stroke-dasharray="4 2"/>
+    <polygon points="40, -5 50, 0 40, 5" fill="#3b82f6"/>
+    <text x="25" y="-12" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">ItemEvent</text>
+  </g>
+
+  <!-- Step 2: VB.NET Business Logic Controller -->
+  <g transform="translate(390, 120)">
+    <rect width="260" height="180" rx="12" fill="url(#stepGrad)" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sapShadow)"/>
+    <circle cx="35" cy="35" r="16" fill="#4c1d95"/>
+    <text x="35" y="41" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#c084fc" text-anchor="middle">2</text>
+    <text x="65" y="40" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">VB.NET Logic &amp; Rules</text>
+    
+    <text x="25" y="85" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• COA parameter range checks</text>
+    <text x="25" y="110" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• Batch release authorization</text>
+    <text x="25" y="135" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• Sample registration calculation</text>
+    <text x="25" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#c084fc">• Formula tolerance bounds</text>
+  </g>
+
+  <!-- Connector Arrow 2 -->
+  <g transform="translate(665, 200)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#8b5cf6" stroke-width="3" stroke-dasharray="4 2"/>
+    <polygon points="40, -5 50, 0 40, 5" fill="#8b5cf6"/>
+    <text x="25" y="-12" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">DI API</text>
+  </g>
+
+  <!-- Step 3: SAP DI API & UDT / UDF / UDO -->
+  <g transform="translate(730, 120)">
+    <rect width="230" height="180" rx="12" fill="url(#stepGrad)" stroke="#10b981" stroke-width="1.5" filter="url(#sapShadow)"/>
+    <circle cx="35" cy="35" r="16" fill="#064e3b"/>
+    <text x="35" y="41" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#6ee7b7" text-anchor="middle">3</text>
+    <text x="65" y="40" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Database &amp; UDOs</text>
+    
+    <text x="25" y="85" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• User-Defined Tables (UDT)</text>
+    <text x="25" y="110" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• User-Defined Fields (UDF)</text>
+    <text x="25" y="135" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">• Transaction ACID persistence</text>
+    <text x="25" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#6ee7b7">• SQL Server ERP backend</text>
+  </g>
+
+  <!-- Bottom Panel: Business Workflows Implemented -->
+  <g transform="translate(50, 335)">
+    <rect width="910" height="175" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" filter="url(#sapShadow)"/>
+    <text x="30" y="35" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">Implemented Industrial Business Workflows</text>
+    
+    <g transform="translate(30, 60)">
+      <rect width="200" height="85" rx="8" fill="#1e293b"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">Quality Test Request</text>
+      <text x="15" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Links shop floor testing to</text>
+      <text x="15" y="68" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">incoming GRPO batches</text>
+    </g>
+
+    <g transform="translate(250, 60)">
+      <rect width="200" height="85" rx="8" fill="#1e293b"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#a78bfa">Certificate of Analysis</text>
+      <text x="15" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Auto-generates verified</text>
+      <text x="15" y="68" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">laboratory test certificates</text>
+    </g>
+
+    <g transform="translate(470, 60)">
+      <rect width="200" height="85" rx="8" fill="#1e293b"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#34d399">Batch Release Request</text>
+      <text x="15" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Enforces QA sign-off before</text>
+      <text x="15" y="68" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">releasing lots to sales</text>
+    </g>
+
+    <g transform="translate(690, 60)">
+      <rect width="190" height="85" rx="8" fill="#1e293b"/>
+      <text x="15" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#facc15">Sample &amp; Formula</text>
+      <text x="15" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Registration &amp; tolerance</text>
+      <text x="15" y="68" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">validation for raw mix</text>
+    </g>
+  </g>
+</svg>
